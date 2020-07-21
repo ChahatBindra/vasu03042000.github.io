@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <link href="css/boot.css" rel="stylesheet">
+       
+       
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="css/bootstr.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+</head>
+<body>
+    <div id = "men">
+        <form action="simulation.html">
+            <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='simulation.html'">Exit</button>
+        </form>
+    </div> 
+    
+    <div class="flex-container">
+        <button id='button' class="btn btn-dark" onclick="myMove()" >Start simulation</button>
+        <label class="wm1" for="">Select Source Mac Address</label>
+        <label class="wm2" for="">Select Destination Mac Address</label>
+        <label class="wc1" for="">00:00:00:a1:2b:cc</label>
+        <label class="wc2" for="">00:00:00:a2:2b:cb</label>
+        <label class="wc3" for="">00:00:00:a3:2b:cd</label>
+        <label class="wc4" for="">00:00:00:a4:2b:cf</label>
+        <label class="wc5" for="">00:00:00:a5:2b:cg</label>
+        <label class="wc6" for="">00:00:00:a6:2b:cm</label>
+        <input type="radio" id="p1" class="w1" name="" value="1">
+        <input type="radio" id="p2" class="w2" name="" value="1">
+        
+        <input type="radio" id="p3" class="w3" name="" value="1">
+        <input type="radio" id="p4" class="w4" name="" value="1">
+        <input type="radio" id="p5" class="w5" name="" value="1">
+        <input type="radio" id="p6" class="w6" name="" value="1">
+         <input type="radio" id="pl1" class="wr1" name="sou" value="1">
+        <input type="radio" id="pl2" class="wr2" name="sou" value="1">
+        
+        <input type="radio" id="pl3" class="wr3" name="sou" value="1">
+        <input type="radio" id="pl4" class="wr4" name="sou" value="1">
+        <input type="radio" id="pl5" class="wr5" name="sou" value="1">
+        <input type="radio" id="pl6" class="wr6" name="sou" value="1">
+        <label class="wrl1" for="">00:00:00:a1:2b:cc</label>
+        <label class="wrl2" for="">00:00:00:a2:2b:cb</label>
+        <label class="wrl3" for="">00:00:00:a3:2b:cd</label>
+        <label class="wrl4" for="">00:00:00:a4:2b:cf</label>
+        <label class="wrl5" for="">00:00:00:a5:2b:cg</label>
+        <label class="wrl6" for="">00:00:00:a6:2b:cm</label>
+        <label class="wrr1" for="">00:00:00:a1:2b:cc</label>
+        <label class="wrr2" for="">00:00:00:a2:2b:cb</label>
+        <label class="wrr3" for="">00:00:00:a3:2b:cd</label>
+        <label class="wrr4" for="">00:00:00:a4:2b:cf</label>
+        <label class="wrr5" for="">00:00:00:a5:2b:cg</label>
+        <label class="wrr6" for="">00:00:00:a6:2b:cm</label>
+        <!-- <input type="radio" id="p1" class="wrapper1" name="" value="1">
+        <input type="radio" id="p2" class="wrapper2" name="" value="1">
+        <input type="radio" id="p3" class="wrapper3" name="" value="1">
+        <input type="radio" id="p4" class="wrapper4" name="" value="1">
+        <input type="radio" id="p5" class="wrapper5" name="" value="1"> -->
+        <span class="w3-xxlarge"><i id="net" class="far fa-envelope glyphicon"></i></span>
+         <!-- <span class="w3-xxlarge wrapper"><i id="net" class="far fa-envelope glyphicon"></i></span> -->
+         <span class="w3-xxlarge wrapper"><i id="net10" class="far fa-envelope glyphicon"></i></span>
+          <span class="w3-xxlarge wrapper"><i id="net9" class="far fa-envelope glyphicon"></i></span>
+        <span class="w3-xxlarge wrapper"><i id="net1" class="far fa-envelope glyphicon"></i></span>
+         <span class="w3-xxlarge wrapper"><i id="net2" class="far fa-envelope glyphicon"></i></span>
+          <span class="w3-xxlarge wrapper"><i id="net3" class="far fa-envelope glyphicon"></i></span>
+          <span class="w3-xxlarge wrapper"><i id="net4" class="far fa-envelope glyphicon"></i></span>
+          <span class="w3-xxlarge wrapper"><i id="net5" class="far fa-envelope glyphicon"></i></span>
+        <img id = "capture" src="img/Capture.PNG" alt="" width="800" height="600" style="margin-left: 90px;
+        margin-bottom: 10px ;">
+        
+
+
+           
+         <!-- <div id = "row1">
+            <img id = "abc" src="pc.png" alt="PC" width="200" height="200" >
+            <img src="pc.png" alt="PC" width="200" height="200" >
+            <img src="pc.png" alt="PC" width="200" height="200" >
+
+        </div>
+        <hr>
+
+           
+        <div id = "hub">
+            <img src="hub.png" alt="PC" width="200" height="200" >
+            
+
+        </div>
+        <div id = "row3">
+            <img src="pc.png" alt="PC" width="200" height="200" >
+            <img src="pc.png" alt="PC" width="200" height="200" >
+            <img src="pc.png" alt="PC" width="200" height="200" >
+
+        </div> -->
+        <div id="msg1" class="bulb1"></div>
+        <div id="msg2" class="bulb2"></div>
+        <div id="msg3" class="bulb3"></div>
+        <div id="msg4" class="bulb4"></div>
+        <div id="msg5" class="bulb5"></div>
+
+        <script src="js/boot.js"></script>
+    
+    </div>
+    
+    
+    
+</body>
+</html>

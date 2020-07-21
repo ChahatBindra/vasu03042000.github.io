@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="css/boot.css" rel="stylesheet">
+       
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script src="js/dragdrop.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id = "empty">
+        <form action="simulation.html">
+            <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='simu.html'" >Exit</button>
+    
+        </form>
+    </div>
+    <div class="flex-container">
+        <br>
+        <div class = "split left" ondrop="drop(event)" ondragover="allowDrop(event)">
+            
+            <ul id = "dragdrop">
+                <li> Switch <br>
+                    <img src="img/hub.png" draggable="true" ondragstart="drag(event,id)" id="drag1" width="200" height="150">
+                </li>
+                <li>Hub <br>
+                    <img src="img/hub.png" alt="" draggable="true" ondragstart="drag(event,id)" id="drag2" width="200" height="150">
+                </li>
+                <li> Router <br>
+                    <img src="img/Router.png" alt="" draggable="true" ondragstart="drag(event,id)" id="drag3" width="200" height="150" >
+                </li>
+                <li> Bridge <br>
+                    <img src="img/ciscobridge.png" alt="" draggable="true" ondragstart="drag(event,id)" id="drag4" width="200" height="150" >
+                </li>     
+            </ul>
+           
+                
+        </div>
+        <div class = "split right" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        </div>
+    </div>
+    
+</body>
+</html>
