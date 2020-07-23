@@ -17,7 +17,7 @@
     padding: 0%;
     margin: 0%;
     height: 100% ;
-    background-color: #ecf0f5;
+    /* background-color: #ecf0f5; */
     position: sticky;
 
     
@@ -66,7 +66,7 @@ ul li a:active{
    
     
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ecf0f5;
+    /* background-color: #ecf0f5; */
     
     height: 100%;
     width: 85%;
@@ -93,13 +93,13 @@ h1 {
 h2, h3{
     padding: 20px;  
     margin: 0%;
-    background-color: #ecf0f5;
+    /* background-color: #ecf0f5; */
     display: block;
 
 }
 
 .card{
-  background-color: #ecf0f5;
+  /* background-color: #ecf0f5; */
   
   position: absolute;
   width:200px;
@@ -136,7 +136,7 @@ li ol {
     padding: 1%;
 }
 #links li a{
-    background-color: #ecf0f5;
+    /* background-color: #ecf0f5; */
     color: #333333;
 }
 #links li a:hover{
@@ -149,7 +149,7 @@ li ol {
 
 }
 html, body{
-    background-color: #ecf0f5;
+    /* background-color: #ecf0f5; */
     padding: 0%;
     margin: 0%;    
 }
@@ -485,7 +485,7 @@ ol{
        left:680px;
      }
      body{
-       background-color: #ecf0f5;
+       /* background-color: #ecf0f5; */
      }
        .bulb1{
        position:absolute;
