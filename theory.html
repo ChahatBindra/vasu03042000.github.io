@@ -147,7 +147,7 @@
                 </section>
                     <!-- Main content -->
                     <section class="content">
-                    <h3 style="margin-top:5%"> Theory </h3>
+                    <h3 style="margin-top:5%"><b> Theory </b> </h3>
                     <p style="font-size:130%; margin-top:2%">
 
                     <!--Aim of experiment -->
@@ -159,6 +159,55 @@
                         
                        </p>
                        <ol>
+                        <li> <b>Hubs</b> </li> 
+                        <p>Hubs connect multiple computer networking devices together. A hub also acts as a repeater in that it amplifies signals that deteriorate after traveling long distances over connecting cables. A hub is the simplest in the family of network connecting devices because it connects LAN components with identical protocols.
+                            A hub can be used with both digital and analog data, provided its settings have been configured to prepare for the formatting of the incoming data.<br>
+                            Hubs do not perform packet filtering or addressing functions; they just send data packets to all connected devices. Hubs operate at the Physical layer of the Open Systems Interconnection (OSI) model. 
+                            <br>There are two types of hubs:<br><span style = padding:1%>a. simple port<br></span>
+                            <span style = padding:1% >b. multiple port<br></span>
+                            Hub falls in two categories:<br>
+                            Active Hub: They are smarter than the passive hubs. They not only provide the path for the data signals in fact they regenerate, concentrate and strengthen the signals before sending them to their destinations. Active hubs are also termed as ‘repeaters’.
+                            <br>Passive Hub: They are more like point contact for the wires to build in the physical network. They have nothing to do with modifying the signals.
+                        </p>
+                        <img src="img/Hubs.jpg" alt="Hubs">
+                        <br>
+                        <br>
+                    <li><b>Bridge</b></li>
+                        <p>Bridges are used to connect two or more hosts or network segments together. The basic role of bridges in network architecture is storing and forwarding frames between the different segments that the bridge connects. They use hardware Media Access Control (MAC) addresses for transferring frames. By looking at the MAC address of the devices connected to each segment, bridges can forward the data or block it from crossing. Bridges can also be used to connect two physical LANs into a larger logical LAN.
+                            <br>Types of Bridges:<br>
+                            There are mainly three types in which bridges can be characterized:<br>
+                            Transparent Bridge: As the name signifies, it appears to be transparent for the other devices on the network. The other devices are ignorant of its existence. It only blocks or forwards the data as per the MAC address.
+                            <br>Source Route Bridge: It derives its name from the fact that the path which the packet takes through the network is implanted within the packet. It is mainly used in Token ring networks.
+                            <br>Translational Bridge: The process of conversion takes place via Translational Bridge. It converts the data format of one networking to another. For instance Token ring to Ethernet and vice versa. 
+                        </p>
+                        <img src="img/Bridge.png" alt="Bridge">
+                        <br>
+                        <br>
+                        <li><b>Router </b></li>
+                        <p>A router is a network layer hardware device that transmits data from one LAN to another if both networks support the same set of protocols. So a router is typically connected to at least two LANs and the internet service provider (ISP). It receives its data in the form of packets, which are data frames with their destination address added. Router also strengthens the signals before transmitting them. That is why it is also called repeater. <br> There are 2 types of Routing Tables:
+                            <br> Static 
+                            <br>Dynamic
+                            
+                        </p>
+                        <img src = "img/Router.jpg" alt = "Router"> 
+                        <br>
+                        <br>
+                    <li><b>Switch</b></li>
+                        <p>Switch is a network device that connects other devices to Ethernet networks through twisted pair cables. It uses  packet switching technique to receive, store and forward data packets on the network. The switch maintains a list of network addresses of all the devices connected to it.
+                            On receiving a packet, it checks the destination address and transmits the packet to the correct port. Before forwarding, the packets are checked for collision and other network errors. The data is transmitted in full duplex mode.
+                            Ways in which Switch works:-
+                            <ol id="within">
+                                <li>Flooding</li>
+                                <li>Forwarding</li>
+                                <li>Filtering</li>
+                                <li>Broadcasting</li>
+                            </ol>
+                           
+                        </p>
+                        <img src="img/Switch.jpg" alt="Switch">
+                        <br>
+                        <br>
+
                            <li><b>Modem</b></li>
                                 <p>Modem is a device that enables a computer to send or receive data over telephone or cable lines. The main function of the modem is to convert digital signal into analog and vice versa. Modem is a combination of two devices − modulator and demodulator. The modulator converts digital data into analog data when the data is being sent by the computer. The demodulator converts analog data signals into digital data when it is being received by the computer.
                                 </p>
@@ -183,31 +232,7 @@
                                 <img src = "img/Ethernet Card.jpg " alt = "Ethernet Card"> 
                                 <br>
                                 <br>
-                            <li>Router</li>
-                                <p>A router is a network layer hardware device that transmits data from one LAN to another if both networks support the same set of protocols. So a router is typically connected to at least two LANs and the internet service provider (ISP). It receives its data in the form of packets, which are data frames with their destination address added. Router also strengthens the signals before transmitting them. That is why it is also called repeater. <br> There are 2 types of Routing Tables:
-                                    <br> Static 
-                                    <br>Dynamic
-                                    
-                                </p>
-                                <img src = "img/Router.jpg" alt = "Router"> 
-                                <br>
-                                <br>
-                            <li><b>Switch</b></li>
-                                <p>Switch is a network device that connects other devices to Ethernet networks through twisted pair cables. It uses  packet switching technique to receive, store and forward data packets on the network. The switch maintains a list of network addresses of all the devices connected to it.
-                                    On receiving a packet, it checks the destination address and transmits the packet to the correct port. Before forwarding, the packets are checked for collision and other network errors. The data is transmitted in full duplex mode.
-                                    Ways in which Switch works:-
-                                    <ol id="within">
-                                        <li>Flooding</li>
-                                        <li>Forwarding</li>
-                                        <li>Filtering</li>
-                                        <li>Broadcasting</li>
-                                    </ol>
-                                   
-                                </p>
-                                <img src="img/Switch.jpg" alt="Switch">
-                                <br>
-                                <br>
-                            <li><b>Gateway</b></li>
+                                                        <li><b>Gateway</b></li>
                                 <p>Gateway is a network device used to connect two or more dissimilar networks. In networking parlance, networks that use different protocols are dissimilar networks. A gateway usually is a computer with multiple NICs connected to different networks.Gateways provide translation between networking technologies such as Open System Interconnection (OSI) and Transmission Control Protocol/Internet Protocol (TCP/IP). Because of this, gateways connect two or more autonomous networks, each with its own routing algorithms, protocols, topology, domain name service, and network administration procedures and policies.
                                     Gateway uses packet switching technique to transmit data from one network to another. In this way it is similar to a router, the only difference being a router can transmit data only over networks that use the same protocols.
                                 </p>
@@ -222,30 +247,7 @@
                                 <br>
                                 <br>
             
-                            <li> <b>Hubs</b> </li> 
-                                <p>Hubs connect multiple computer networking devices together. A hub also acts as a repeater in that it amplifies signals that deteriorate after traveling long distances over connecting cables. A hub is the simplest in the family of network connecting devices because it connects LAN components with identical protocols.
-                                    A hub can be used with both digital and analog data, provided its settings have been configured to prepare for the formatting of the incoming data.<br>
-                                    Hubs do not perform packet filtering or addressing functions; they just send data packets to all connected devices. Hubs operate at the Physical layer of the Open Systems Interconnection (OSI) model. 
-                                    <br>There are two types of hubs:<br><span style = padding:1%>a. simple port<br></span>
-                                    <span style = padding:1% >b. multiple port<br></span>
-                                    Hub falls in two categories:<br>
-                                    Active Hub: They are smarter than the passive hubs. They not only provide the path for the data signals in fact they regenerate, concentrate and strengthen the signals before sending them to their destinations. Active hubs are also termed as ‘repeaters’.
-                                    <br>Passive Hub: They are more like point contact for the wires to build in the physical network. They have nothing to do with modifying the signals.
-                                </p>
-                                <img src="img/Hubs.jpg" alt="Hubs">
-                                <br>
-                                <br>
-                            <li><b>Bridge</b></li>
-                                <p>Bridges are used to connect two or more hosts or network segments together. The basic role of bridges in network architecture is storing and forwarding frames between the different segments that the bridge connects. They use hardware Media Access Control (MAC) addresses for transferring frames. By looking at the MAC address of the devices connected to each segment, bridges can forward the data or block it from crossing. Bridges can also be used to connect two physical LANs into a larger logical LAN.
-                                    <br>Types of Bridges:<br>
-                                    There are mainly three types in which bridges can be characterized:<br>
-                                    Transparent Bridge: As the name signifies, it appears to be transparent for the other devices on the network. The other devices are ignorant of its existence. It only blocks or forwards the data as per the MAC address.
-                                    <br>Source Route Bridge: It derives its name from the fact that the path which the packet takes through the network is implanted within the packet. It is mainly used in Token ring networks.
-                                    <br>Translational Bridge: The process of conversion takes place via Translational Bridge. It converts the data format of one networking to another. For instance Token ring to Ethernet and vice versa. 
-                                </p>
-                                <img src="img/Bridge.png" alt="Bridge">
-                                <br>
-                                <br>
+                            
                             <li><b>Repeater</b></li>
                                 <p>
                                     A repeater is an electronic device that amplifies the signal it receives. You can think of a repeater as a device which receives a signal and retransmits it at a higher level or higher power so that the signal can cover longer distances, more than 100 meters for standard LAN cables. Repeaters work on the Physical layer.

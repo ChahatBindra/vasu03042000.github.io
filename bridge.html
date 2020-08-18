@@ -4,9 +4,9 @@
     <script class="gtm">
     
         var dataLayer = [{
-            'labName': 'Electrical Machines (Simulation)',
-            'discipline': 'Electrical Engineering',
-            'college': 'IITR',
+            'labName': 'Network Devices (Simulation)',
+            'discipline': 'Computer Science Engineering',
+            'college': 'Bennett University',
             'phase': '3',
         }];
     
@@ -29,11 +29,46 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/vlabs-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/drop.css">
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script></head>
         <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <ol style="font-size: medium;">
+                        <li>1. Click On the Simulation tab from the left dropdown menu.</li>
+                        <li>2. Then Click on "Click Here" to go to the default Simulation window which will be hub.</li>
+                        <li>3. You will be directed to a new tab.</li>
+                        <li>4. Default is Hub but still you can start any simulation first by clicking on the buttons visible to you.</li>
+                        <li>5. In the Simulation Frame, select the Source PC's Mac Address and the Destinaton PC's Mac Address.</li>
+                        <li>6. Click on the start Simulation to start the simulation.</li>
+                        <li>7. Simulation starts.</li>
+                        <li>8. Try out the other devices just by clicking on the button visible to you stating ROUTER, HUB, SWITCH, BRIDGE.</li>
+                        <li>9. If you want to exit the simulation just close the tab.</li>
+                    </ol> 
+                </div>
+              
+              </div>
+              <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                    }
+                    
+                    /* Close when someone clicks on the "x" symbol inside the overlay */
+                    function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                    }
+            </script>
+        
+        
             <!--Google Tag Manager (noscript)-->
             <noscript class="gtm">
                 <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0">			
@@ -60,32 +95,52 @@
                 </nav>
                 		
             </header>
-            <script type="text/javascript">
-                // Popup window code
-                                      function newPopup(url) {
-                                        popupWindow = window.open(url,'popUpWindow','height=500,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
-                                      }
-                                        function newPopup1(url) {
-                                        popupWindow1 = window.open(url,'popUpWindow1','height=750,width=1300,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
-                                      }
-              </script>
-              
-              
-              
-           
+            <!-- <script type="text/javascript">
+   
+                function dropdown() 
+                {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
 
-            <section class="content">
-                <br>
-                <section class = "content-header">
-                   <div id = "con">
-                    <h3 id="con-head" align = "center"style="font-family: 'font-family: 'Raleway', sans-serif;">Demo Of Bridge</h3>
-                    <button type="button" id="con-button" class="btn btn-light" onclick="JavaScript:newPopup('procedure.html');">Instructions</button>
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event)
+                {
+                    if (!event.target.matches('.dropbtn')) 
+                    {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) 
+                        {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show'))
+                        {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script> -->
+                
 
-                   </div> 
+        <section class="content">
+            <br>
+            <section class = "content-header">
+               <div id = "con">
+                <h3 id="con-head" align = "center"style="font-family: 'font-family: 'Raleway', sans-serif;">Demo Of Bridge</h3>
+                
+                    <button type="button" id="con-button" class="btn btn-light dropbtn" onclick="openNav()">Instructions</button>
+               
+                    
+               </div>
+                    
             </section>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" onclick= "location.href ='hub.html'" data-placement="bottom" title="Hub Simulator" >Hub</button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" onclick= "location.href = 'switch.html'" data-placement="bottom" title="Switch Simulator">Switch</button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" onclick= "location.href ='router.html','_blank'" data-placement="bottom" title="Router Simulator">Router</button>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" onclick= "location.href ='bridge.html','_blank'" data-placement="bottom" title="Bridge Simulator" >bridge</button>
                 <br>
                 <iframe src="bridgesimu.html" frameborder="1" width=1520px height=700px ></iframe>
-            </section>
+        </section>
               
            
     
